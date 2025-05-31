@@ -20,3 +20,4 @@ echo "Underscore di number :";
 var_dump(8_45000000);
 
 
+echo phpversion();
