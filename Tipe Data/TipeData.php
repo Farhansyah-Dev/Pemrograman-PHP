@@ -36,4 +36,10 @@ var_dump(1_234.567); // tipe data float dengan underscore
 echo "Integer overflow: ";
 var_dump(9223372036854775807 + 1); // overflow pada integer 64 bit
 
+// Tipe data Boolean
+echo "Tipe data Boolean True: ";
+var_dump(true); // tipe data boolean dengan nilai true
+
+echo "Tipe data Boolean False: ";
+var_dump(false); // Tipe data boolean dengan nilai false
 echo phpversion();
