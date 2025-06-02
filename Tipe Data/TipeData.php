@@ -42,4 +42,31 @@ var_dump(true); // tipe data boolean dengan nilai true
 
 echo "Tipe data Boolean False: ";
 var_dump(false); // Tipe data boolean dengan nilai false
-echo phpversion();
+
+// Tipe data String
+echo "Tipe data String (tanda petik 1): \n";
+var_dump('Hello, There!'); 
+$nama = 'Muhammad Farhan Wirdiansyah';  // tipe data string dengan tanda petik satu
+echo 'Nama: ', $nama . "\n";
+
+echo "Tipe data String (tanda petik 2): \n";
+echo "Nama: ";
+echo "Muhammad Farhan Wirdiansyah\n"; // tipe data string dengan tanda petik dua
+
+// String multi line
+echo <<<Han
+String multi line pada PhP
+saya sedang belajar PhP
+Saya sangat senang belajar PhP
+menggunakan heredoc (<<<) syntax
+Han;
+echo "\n";
+
+echo <<<'Han'
+String multi line pada PhP
+saya sedang belajar PhP
+Saya sangat senang belajar PhP
+menggunakan heredoc (<<<) syntax
+Han;
+echo "\n";
+// echo phpversion();
