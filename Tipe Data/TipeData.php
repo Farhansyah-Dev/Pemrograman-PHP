@@ -19,5 +19,17 @@ var_dump(0b11111111); // tipe data integer dengan notasi Binary
 echo "Underscore di number :";
 var_dump(8_45000000);
 
+// Tipe data Float
+echo "Tipe data Float: ";
+var_dump(1.234); // tipe data float dengan notasi desimal
+
+echo "Float dengan e notation: (sama dengan 1.2 * 10^3)";
+var_dump(1.2e3); // tipe data float dengan notasi e notation
+
+echo "Float dengan e notasion negatif: (sama dengan 1.2 / 10^3)";
+var_dump(1.2e-3); // tipe data float dengan notasi e notation negatif
+
+echo 'Float dengan underscore: ';
+var_dump(1_234.567); // tipe data float dengan underscore
 
 echo phpversion();
