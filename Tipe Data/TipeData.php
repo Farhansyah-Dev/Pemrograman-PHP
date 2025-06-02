@@ -32,4 +32,8 @@ var_dump(1.2e-3); // tipe data float dengan notasi e notation negatif
 echo 'Float dengan underscore: ';
 var_dump(1_234.567); // tipe data float dengan underscore
 
+// Integer overflow
+echo "Integer overflow: ";
+var_dump(9223372036854775807 + 1); // overflow pada integer 64 bit
+
 echo phpversion();
