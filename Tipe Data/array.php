@@ -50,7 +50,34 @@ var_dump($lemariBaju); // menampilkan isi array $lemariBaju
 $lemariBaju["rak1"] = "Baju kerja"; // mengubah isi rak1
 echo 'isi rak1: ', $lemariBaju["rak1"] . "\n";//menampilkan isi rak1
 echo "data lemari baju: \n";
-foreach (array_values($lemariBaju)as $nilai) {
+foreach (array_values($lemariBaju)as $nilai) { 
     echo $nilai, "\n"; // menampilkan semua nilai dari array $lemariBaju
 }
+// array multidimensi
+$biodata = array (
+    "nama" => "Muhammad Farhan Wirdiansyah",
+    "umur" => 18,
+    "jenis_kelamin" => "laki-laki",
+    "alamat" => array(
+        "kp" => "Cisalak",
+        "kel" => "Sumur Batu",
+        "kec" => "Bantar Gebang",
+        "kota" => "Bekasi"
+    )
+    );
+
+var_dump($biodata["alamat"]["kota"]);
+
+$bekasi = [
+    'stasiun' => 'Stasius Bekasi',
+    'terminal' => 'Terminal Bekasi',
+    'kantor_pemerintahan' => [
+        'walikota' => 'Kantor Walikota Bekasi',
+        'dinas_pendidikan' => 'Dinas Pendidikan Kota Bekasi'
+    ]
+    ];
+$bekasi ['kantor_pemerintahan']['dinas_pendidikan'] = 'Dispendik kota bekasi';
+
+var_dump($bekasi);
+
 ?>
