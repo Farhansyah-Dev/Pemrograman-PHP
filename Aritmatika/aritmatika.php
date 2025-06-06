@@ -17,3 +17,7 @@ echo "Hasil penjumlahan $a * $b = $kali\n"; // menampilkan hasil perkalian
 echo "Hasil penjumlahan $a / $b = $bagi\n"; // menampilkan hasil pembagian
 echo "Hasil penjumlahan $a % $b = $modulus\n"; // menampilkan hasil modulus
 echo "Hasil penjumlahan $a ** $b = $pangkat\n"; // menampilkan hasil pangkat
+
+$negatif = -$a; // operator unary negatif
+var_dump($negatif); // menampilkan nilai negatif dari $a
+
