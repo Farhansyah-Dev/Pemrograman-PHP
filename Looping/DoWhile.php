@@ -1,10 +1,10 @@
 <?php
 //Do While PHP
 
-$counter = 1;
+$counter = 10;
 
 do {
     echo 'Hitungan ke-' . $counter . PHP_EOL;
-    $counter++;
+    $counter--;
 }
-while ($counter <= 10);
+while ($counter >= 1);
