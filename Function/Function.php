@@ -30,3 +30,14 @@ sum('100','100');
 sum(100, 100);
 sum(true, true);
 
+// Length Argument List
+function sumAll (...$number) {
+    $total = 0;
+    foreach ($number as $numbers) {
+        $total += $numbers;
+    }
+    echo "Total " . implode(" + ", $number) . " = $total" . PHP_EOL;
+}
+$number = [1, 2, 3, 4, 5];
+sumAll(1, 2, 3, 4, 5);
+sumAll(...$number);
