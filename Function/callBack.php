@@ -1,7 +1,7 @@
 <?php
 
 function callBack (string $universitas, callable $filter) {
-    $hasil = call_user_func($filter, $universitas);
+    $hasil = call_user_func($filter, $universitas); //ini sama saja seperti $hasil = $filter($universitas);
     echo "Universitas $hasil" .PHP_EOL;
 }
 
