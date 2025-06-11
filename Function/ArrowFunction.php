@@ -1,13 +1,12 @@
 <?php
 //Annonymous Function
 $jeniskucing = "Persia";
-$warna = "Orange";
 
-$KucingSaya = function () use ($jeniskucing, $warna) {
-    echo "Jenis Kucing: $jeniskucing" . PHP_EOL;
-    echo "Warna Kucing: $warna" . PHP_EOL;
+$anonimusFunction = function () use ($jeniskucing): string {
+    return "Jenis Kucing $jeniskucing ". PHP_EOL;
 };
-$KucingSaya();
+echo $anonimusFunction();
 
 //Arrow Function
-$KucingSaya = fn () => "Jenis Kucing $jeniskucing" . "Warna Kucing: $warna" .PHP_EOL;
+$arrowFunction = fn() => "Jenis Kucing $jeniskucing" . PHP_EOL ;
+echo $arrowFunction();
