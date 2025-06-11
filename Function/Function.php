@@ -43,7 +43,7 @@ sumAll(1, 2, 3, 4, 5);
 sumAll(...$number);
 
 //Return Value1
-function kalkulator(int $first, int $seccond){
+function kalkulator(int $first, int $seccond): int {
     $total = $first + $seccond;
     return $total;
 }
@@ -51,7 +51,7 @@ $result = kalkulator(12, 3);
 var_dump($result);
 
 // Return Value2
-function getValue(int $value){
+function getValue(int $value) : string {
     if($value >= 80){
         return "A";
     }
@@ -71,3 +71,34 @@ function getValue(int $value){
 
 $result = getValue(90);
 var_dump($result);
+$result = getValue(65);
+var_dump($result);
+$result = getValue(20);
+var_dump($result);
+
+//Variable Function
+function foo (){
+    echo "Foo" . PHP_EOL;
+}
+function bar() {
+    echo "Bar" . PHP_EOL;
+}
+$memanggilFunction = "foo";
+$memanggilFunction();
+
+$panggilFunction = "bar";
+$panggilFunction();
+
+//return Variabel Function
+function say($name, $filter){
+    $finalname = $filter($name);
+    echo "Hello $finalname" . PHP_EOL;
+}
+
+function sampleFunction (string $name): string {
+    return "Sample $name";
+}
+
+say("eko", "sampleFunction");
+say("han", "strtoupper");
+say("HAN", "strtolower");
