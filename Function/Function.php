@@ -41,3 +41,33 @@ function sumAll (...$number) {
 $number = [1, 2, 3, 4, 5];
 sumAll(1, 2, 3, 4, 5);
 sumAll(...$number);
+
+//Return Value1
+function kalkulator(int $first, int $seccond){
+    $total = $first + $seccond;
+    return $total;
+}
+$result = kalkulator(12, 3);
+var_dump($result);
+
+// Return Value2
+function getValue(int $value){
+    if($value >= 80){
+        return "A";
+    }
+    elseif ($value >= 70 ) {
+        return "B";
+    }
+    elseif ($value >= 60 ) {
+        return "C";
+    }
+    elseif ($value >= 50 ) {
+        return "D";
+    }
+    else {
+        return "E";
+    }
+}
+
+$result = getValue(90);
+var_dump($result);
