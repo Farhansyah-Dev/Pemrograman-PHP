@@ -102,3 +102,22 @@ function sampleFunction (string $name): string {
 say("eko", "sampleFunction");
 say("han", "strtoupper");
 say("HAN", "strtolower");
+
+//Anonymous Function
+$sayHello = function (string $name) { // Tidak ada nama function
+    echo "Hello $name" . PHP_EOL;
+};
+sayHello("Muhammad Farhan Wirdiansyah");
+
+function sayGoodbye (string $name, $filter) {
+    $finalName = $filter ($name);
+    echo "Good Bye $finalName" . PHP_EOL;
+}
+sayGoodbye("Farhan", function(string $name):string{
+    return strtoupper($name);
+});
+
+$filterFunction = function(string $name): string {
+    return strtoupper($name);
+};
+sayGoodbye('Farhan', $filterFunction);
