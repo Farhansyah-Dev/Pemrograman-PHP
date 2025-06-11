@@ -121,3 +121,15 @@ $filterFunction = function(string $name): string {
     return strtoupper($name);
 };
 sayGoodbye('Farhan', $filterFunction);
+
+//memanggil variable diluar function
+$cat = "anggora";
+$color = "Orange";
+$gender = "Male";
+
+$myCat = function () use($cat, $color, $gender){
+    echo "Jenis Kucing: $cat" . PHP_EOL;
+    echo "Warna: $color" . PHP_EOL;
+    echo "Jenis Kelamin $gender" . PHP_EOL;
+};
+$myCat ();
