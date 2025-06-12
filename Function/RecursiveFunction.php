@@ -19,3 +19,15 @@ function faktorialRecursive(int $value) :int {
     }
 }
 var_dump(faktorialRecursive(5));
+
+//Recursive Memakan Meomory
+function Loop(int $value) {
+    if ($value == 0 ) {
+        echo "Loop Selesai" . PHP_EOL;
+    } else {
+        echo "Loop ke -$value" . PHP_EOL;
+        Loop($value - 1);
+    };
+};
+
+Loop(10);
