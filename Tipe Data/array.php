@@ -23,15 +23,15 @@ var_dump($nama_siswa); // menampilkan isi array $nama_siswa
 
 // array kosong
 $empety_array = []; // membuat array kosong
-echo "isi data dari array: $empety_array\n"; // menampilkan pesan
+echo "isi data dari array: $empety_array".PHP_EOL; // menampilkan pesan
 $empety_array = 0; // mengisi array dengan nilai 0
 $empety_array = 1; // mengisi array dengan nilai 1
-echo "isi data dari array: $empety_array\n"; // menampilkan pesan
+echo "isi data dari array: $empety_array".PHP_EOL; // menampilkan pesan
 var_dump($empety_array); // menampilkan isi array $empety_array
 
 // array sebagai map
 $tas = array (
-    "pemelik" => "Farhan",
+    "pemilik" => "Farhan",
     "ukuran" => "medium",
     "warna" => "Hitam",
     "harga" => 45000,
