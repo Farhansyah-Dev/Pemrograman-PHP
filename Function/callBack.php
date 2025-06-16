@@ -10,4 +10,4 @@ callBack("Pelita Bangsa", "strtolower"); //Callback dengan cara biasa
 callBack ("Pelita Bangsa", function(string $universitas):string { //CallBack Annonymous function
     return strtoupper($universitas);
 });
-callBack("Pelita Bangsa", fn($uinversitas) => strtolower($uinversitas) ); // CallBack Arrow Function
+callBack("Pelita Bangsa", fn($universitas) => strtolower($universitas) ); // CallBack Arrow Function

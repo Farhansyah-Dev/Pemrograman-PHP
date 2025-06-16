@@ -1,0 +1,6 @@
+{
+    "peacock.color": "false",
+    
+    "intelephense.diagnostics.undefinedConstants": false
+
+}
