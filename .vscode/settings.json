@@ -1,6 +1,29 @@
 {
-    "peacock.color": "false",
+    "peacock.color": "true",
     
-    "intelephense.diagnostics.undefinedConstants": false
+    "intelephense.diagnostics.undefinedConstants": false,
+    "cSpell.words": [
+        "Menggunakan"
+    ],
+    "cSpell.caseSensitive": false,
+    "cSpell.customDictionaries": {
+        
+
+    },
+    "cSpell.languageSettings": [
+        
+        {
+            "languageId": "php",
+            "dictionaries": [
+                "indonesia"
+            ],
+            "dictionaryDefinitions": [
+                {
+                    "name": "indonesia",
+                    "path": "./.vscode/cspell-indonesia.txt"
+                }
+            ]
+        }
+    ]
 
 }
