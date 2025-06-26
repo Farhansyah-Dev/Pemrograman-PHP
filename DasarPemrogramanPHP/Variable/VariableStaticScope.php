@@ -11,4 +11,8 @@ increment(); // Counter: 0
 function incrementStatic () {
     static $counter = 0;
     echo "Counter: $counter".PHP_EOL;
+    $counter++;
 }
+incrementStatic();
+incrementStatic(); 
+incrementStatic();
