@@ -4,12 +4,12 @@
  * Menampilkan Daftar Todo List
  */
 
-function ShowTodoList() {
-    global $todoList;
+function showTodoList() {
+    global $todolist;
 
     echo 'Daftar TodoList'.PHP_EOL;
 
-    foreach ($todoList as $number => $value) {
+    foreach ($todolist as $number => $value) {
         echo "$number. $value".PHP_EOL;
     }
 
